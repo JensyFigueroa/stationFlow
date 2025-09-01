@@ -1,0 +1,14 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+img{
+   width: 6em;
+} 
+
+.file{
+    width: auto;
+}
+
+.tdPhoto{
+    display: flex;
+    margin: 5px
+}
