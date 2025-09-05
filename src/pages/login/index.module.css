@@ -1,0 +1,19 @@
+.LoginPage {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.LoginForm {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.LoginForm input[name="username"]{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.LoginForm input[name="password"]{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
