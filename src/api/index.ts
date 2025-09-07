@@ -1,6 +1,23 @@
 import data from '../data/data.json';
 
 export default {
+    // Auth
+    auth: {
+        login: (username: string, password: string) => {
+            const user = data.users.find(user => user.username === username && user.password === password);
+            if (user) {
+                return { 
+                    firstname: user.firstname,
+                    lastname: user.lastname,
+                    username, 
+                    token: "fake-jwt-token", 
+                    userRole: user.role 
+                };
+            }
+            
+            return null;
+        }
+    },
 
     // Users
     users: {

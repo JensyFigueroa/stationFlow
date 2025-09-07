@@ -1,8 +1,20 @@
 import React from 'react';
 import styles from './simple-layout.module.css';
-import { NavLink } from 'react-router';
+import { NavLink, useNavigate } from 'react-router';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout, type AuthState } from '../redux/slices/auth';
 
-const SimpleLayout = (props: React.PropsWithChildren) => (
+const SimpleLayout = (props: React.PropsWithChildren) => {
+    const navigate = useNavigate();
+    const auth: AuthState = useSelector((state: any) => state.auth);
+    const dispatch = useDispatch(); 
+
+    const handleLogout = () => {
+        dispatch(logout());
+        navigate("/login");
+    }
+
+    return (
     <div className={styles.SimpleLayout}>
         <div className='navbar navbar-expand-lg navbar-light bg-primary' data-bs-theme="dark">
             <div className='container'>
@@ -33,6 +45,10 @@ const SimpleLayout = (props: React.PropsWithChildren) => (
                         </ul>
                         </li>
                     </ul>
+                    <div>
+                        <span className='navbar-text text-white me-3'>Welcome {auth.firstname} {auth.lastname},</span>
+                        <a style={{cursor: "pointer"}} className='text-white' onClick={handleLogout}>Logout</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,6 +62,6 @@ const SimpleLayout = (props: React.PropsWithChildren) => (
             </div>
         </footer>
     </div>
-);
+)};
 
 export default SimpleLayout;

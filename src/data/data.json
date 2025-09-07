@@ -2,36 +2,48 @@
     "users": [
         {
             "id": 1,
+            "firstname": "John",
+            "lastname": "Doe",
             "username": "admin",
             "password": "admin",
             "role": "admin"
         },
         {
             "id": 2,
+            "firstname": "Jane",
+            "lastname": "Doe",
             "username": "user",
             "password": "user",
             "role": "user"
         },
         {
             "id": 3,
+            "firstname": "Joan",
+            "lastname": "Almonte",
             "username": "joan",
             "password": "password123",
             "role": "user"
         },
         {
             "id": 4,
+            "firstname": "Jensy",
+            "lastname": "Figueroa",
             "username": "jensy",
             "password": "password123",
             "role": "user"
         },
         {
             "id": 5,
+            "firstname": "Cory",
+            "lastname": "Smith",
             "username": "cory",
             "password": "password123",
             "role": "user"
         },
         {
             "id": 6,
+            "firstname": "Charles",
+            "lastname": "Brooks",
             "username": "charles",
             "password": "password123",
             "role": "user"
