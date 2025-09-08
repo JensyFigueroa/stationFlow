@@ -22,7 +22,7 @@
             "lastname": "Almonte",
             "username": "joan",
             "password": "password123",
-            "role": "user"
+            "role": "worker"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "lastname": "Figueroa",
             "username": "jensy",
             "password": "password123",
-            "role": "user"
+            "role": "lead-worker"
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "lastname": "Smith",
             "username": "cory",
             "password": "password123",
-            "role": "user"
+            "role": "quality-control"
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "lastname": "Brooks",
             "username": "charles",
             "password": "password123",
-            "role": "user"
+            "role": "supervisor"
         }
     ],
     "stations": [
@@ -148,5 +148,163 @@
             "qcUserId": 1,
             "stationId": 1
         }
-    ]
+    ],
+    "reports": {
+        "lineReport": [
+            {
+                "id": "RoadRescue",
+                "label": "RoadRescue",
+                "value": "24"
+            },
+            {
+                "id": "ModLine",
+                "label": "ModLine",
+                "value": "64"
+            },
+            {
+                "id": "NewYorkLine",
+                "label": "NewYorkLine",
+                "value": "26"
+            },
+            {
+                "id": "VanLine",
+                "label": "RoadRescue",
+                "value": "12"
+            }
+        ],
+        "lineReportDaily": [
+            {
+                "id": "RoadRescue",
+                "data": [
+                    {
+                        "x": "9/8/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/9/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/10/2025",
+                        "y": 2
+                    },
+                    {
+                        "x": "9/11/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/12/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/13/2025",
+                        "y": 2
+                    },
+                    {
+                        "x": "9/14/2025",
+                        "y": 1
+                    }
+                ]
+            },
+            {
+                "id": "ModLine",
+                "data": [
+                    {
+                        "x": "9/8/2025",
+                        "y": 15
+                    },
+                    {
+                        "x": "9/9/2025",
+                        "y": 12
+                    },
+                    {
+                        "x": "9/10/2025",
+                        "y": 13
+                    },
+                    {
+                        "x": "9/11/2025",
+                        "y": 9
+                    },
+                    {
+                        "x": "9/12/2025",
+                        "y": 7
+                    },
+                    {
+                        "x": "9/13/2025",
+                        "y": 4
+                    },
+                    {
+                        "x": "9/14/2025",
+                        "y": 16
+                    }
+                ]
+            },
+            {
+                "id": "NewYorkLine",
+                "data": [
+                    {
+                        "x": "9/8/2025",
+                        "y": 2
+                    },
+                    {
+                        "x": "9/9/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/10/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/11/2025",
+                        "y": 3
+                    },
+                    {
+                        "x": "9/12/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/13/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/14/2025",
+                        "y": 2
+                    }
+                ]
+            },
+            {
+                "id": "VanLine",
+                "data": [
+                    {
+                        "x": "9/8/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/9/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/10/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/11/2025",
+                        "y": 1
+                    },
+                    {
+                        "x": "9/12/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/13/2025",
+                        "y": 0
+                    },
+                    {
+                        "x": "9/14/2025",
+                        "y": 2
+                    }
+                ]
+            }
+        ]
+    }
 }

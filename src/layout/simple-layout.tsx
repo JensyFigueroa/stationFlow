@@ -52,7 +52,7 @@ const SimpleLayout = (props: React.PropsWithChildren) => {
                 </div>
             </div>
         </div>
-        <div className={styles.MainContent}>
+        <div className={[styles.MainContent, "container"].join(" ")}>
             {props.children}
         </div>
         <footer className='bg-light text-center text-lg-start mt-auto'>
